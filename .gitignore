@@ -13,6 +13,7 @@ out/
 # VS Code / VS settings
 .vscode/
 .idea/
+*.vs/
 *.swp
 
 # Publish output
