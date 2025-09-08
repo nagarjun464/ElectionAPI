@@ -1,7 +1,7 @@
-﻿using Election.Api.Dtos;
-using ElectionModel = Election.Api.Models.Election;
+﻿using Election.API.Dtos;
+using ElectionModel = Election.API.Models.Election;
 
-namespace Election.Api.Mapping;
+namespace Election.API.Mapping;
 
 public static class ElectionMapper
 {

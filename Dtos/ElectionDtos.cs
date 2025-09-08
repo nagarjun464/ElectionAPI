@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Election.Api.Dtos;
+namespace Election.API.Dtos;
 
 public record CreateElectionDto(                           //  For POST 
     [property: Required, StringLength(50, MinimumLength = 3)] string FirstName,

@@ -1,7 +1,7 @@
 ﻿using Google.Cloud.Firestore;
-using ElectionModel = Election.Api.Models.Election;
+using ElectionModel = Election.API.Models.Election;
 
-namespace Election.Api.Data;
+namespace Election.API.Data;
 
 public class FirestoreElectionRepository : IElectionRepository
 {

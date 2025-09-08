@@ -1,6 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 
-namespace Election.Api.Models;
+namespace Election.API.Models;
 
 [FirestoreData]                       // Tells the SDK this class maps to a Firestore document
 public class Election
