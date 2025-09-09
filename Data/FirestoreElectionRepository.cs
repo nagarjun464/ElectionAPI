@@ -41,6 +41,7 @@ public class FirestoreElectionRepository : IElectionRepository
             // note: Firestore may prompt you to create a composite index for (Status + CreatedUtc).
         }
 
+        
         var snaps = await q.GetSnapshotAsync(ct);
         return snaps.Documents.Select(d => d.ConvertTo<ElectionModel>()).ToList();
     }

@@ -14,8 +14,7 @@ public static class ElectionMapper
 
     public static ElectionModel ToModel(CreateElectionDto dto) => new()
     {
-        FirstName = dto.FirstName,
-        LastName = dto.LastName,
+        Name = dto.Name,
         CategoryCode = dto.CategoryCode,
         CategoryId = CategoryMap[dto.CategoryCode],
         StartUtc = dto.StartUtc,
@@ -28,8 +27,7 @@ public static class ElectionMapper
 
     public static void Apply(UpdateElectionDto dto, ElectionModel e)
     {
-        e.FirstName = dto.FirstName;
-        e.LastName = dto.LastName;
+        e.Name = dto.Name;
         e.CategoryCode = dto.CategoryCode;
         e.CategoryId = CategoryMap[dto.CategoryCode];
         e.StartUtc = dto.StartUtc;
@@ -40,6 +38,6 @@ public static class ElectionMapper
     }
 
     public static ElectionDto ToDto(ElectionModel e) =>
-        new(e.Id, e.FirstName, e.LastName, e.CategoryCode, e.CategoryId,
+        new(e.Id, e.Name, e.CategoryCode, e.CategoryId,
             e.StartUtc, e.EndUtc, e.TimeZoneId, e.Status, e.CreatedUtc, e.UpdatedUtc);
 }

@@ -8,8 +8,7 @@ public class Election
     [FirestoreDocumentId]             // Auto-binds the Firestore document Id to this property
     public string Id { get; set; } = default!;
 
-    [FirestoreProperty] public string FirstName { get; set; } = default!;
-    [FirestoreProperty] public string LastName { get; set; } = default!;
+    [FirestoreProperty] public string Name { get; set; } = default!;
     // L = Local, S = State, T = Town Meeting (we’ll map to an int in the mapper)
     [FirestoreProperty] public string CategoryCode { get; set; } = default!;
     [FirestoreProperty] public int CategoryId { get; set; }

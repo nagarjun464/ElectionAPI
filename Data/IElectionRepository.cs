@@ -1,9 +1,9 @@
-﻿namespace Election.API.Data;
-
+﻿
 using System.Threading;
 
 using ElectionModel = Election.API.Models.Election;
 
+namespace Election.API.Data;
 public interface IElectionRepository
 {
     Task<string> CreateAsync(ElectionModel election, CancellationToken ct = default);
